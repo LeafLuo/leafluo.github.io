@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-27T14:43:09.561Z</updated>
+  <updated>2018-02-02T16:30:10.332Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/02/02/Microservices/"/>
+    <id>http://yoursite.com/2018/02/02/Microservices/</id>
+    <published>2018-02-01T16:26:53.456Z</published>
+    <updated>2018-02-02T16:30:10.332Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Microservcies-PART-I"><a href="#Microservcies-PART-I" class="headerlink" title="Microservcies [PART I]"></a>Microservcies [PART I]</h1><h2 id="a-definition-of-this-new-architectural"><a href="#a-definition-of-this-new-architectural" class="headerlink" title="a definition of this new architectural"></a>a definition of this new architectural</h2><p><a href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener">原文链接</a></p><blockquote><blockquote><p>The term “Microservice Architecture” has sprung up over the last few years to describe a particular way of designing software applications as suites of independently deployable services. While there is no precise definition of this architectural style, there are certain common characteristics around organization around business capabillity, automated deployment, intelligence in the endpoints, and decentralized control of languages and data</p></blockquote></blockquote><ul><li>“Microservices” - yet anothher new term on the crowded streets of software architecture. Although our natural inclination is to pass such things by with a contemptuous glance, this bit of terminology describes a style of software systems that we are finding more and more appealing. We’ve seen many projects use this style in the last few years,and results so far have been positive, so much so that for many of our colleagues this is becoming the default style for building enterprise applications, Sadly, however, there’s not much information that outlines what the Microservice stytle is and hwo to do it.</li></ul><ul><li><p>In short, the miroservice arcitectural style [1] is an approach to developing a single applicaton as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API, These services are built aroud business capabillities and independently deployable by fully automated deployment machinery.There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.</p></li><li><p>To start explaining the microservice style it’s useful to compare it to the monolithic style: a monolithic application built as a single unit, Enterprise Applications are often built in three main parts: a client-side user interface(consisting of HTML pages and javascript running in a browser on the user’s machine) a database(consisting of many tables inserted into a common, and usually relational, database management system), and a server-side application. The server-side application will handle HTTP requests, execute domin logic, retrieve and update data from the database, and select and populate HTML views to be sent to the browser. This server-side application is a monolith - a single logical executable[2]. Any changes to the system involve building and deploying a new version of the server-side application.</p></li><li><p>Such a monolithic server is a natural way to approach building such a system. All your logic for handling a request runs in a single process, allowing you to use the basic features of your language to divide up the application into classes, functions, and namespaces, With some care, you can run and test the application on a developer’s laptop, and use a deployment pipeline to ensure that changes are properly tested and deployed into productin. You can horizontally scal the monolith by running many instances behind a load-balancer.</p></li><li><p>Monolithic applications can be successful, but increasingly people are feeling frustrations with them - especially are more applications are being deployed to the cloud. Change cycles are tied together - a change made to a small part of the application, requires the entire monolith to be rebuilt and deployed. Over time it’s often hard to keep a good modular structure, making it harder to keep changes that ought to only affect one module within that module. Scaling requires scaling of the entire application rather than parts of it that require greater resouce.</p></li><li><p>These frustrations have led to the microservice architectual style: building applications as suites of services. As well as the fact services are independently deployable and scalable, each service also provides a firm module boundary, each allowing for different services to be written in different programming languages. They can also be managed by different teams.</p></li><li><p>We do not claim that the micro service style is novel or innovative, its roots go back at least to  the design principles of Unix. But we do think that not enoughh people consider a microservcie architecture and that many software developments would be better off if they used it.</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Microservcies-PART-I&quot;&gt;&lt;a href=&quot;#Microservcies-PART-I&quot; class=&quot;headerlink&quot; title=&quot;Microservcies [PART I]&quot;&gt;&lt;/a&gt;Microservcies [PART I]&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
