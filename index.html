@@ -277,6 +277,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/04/Microservice-II/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LeafLuo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="高昕羽的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/04/Microservice-II/" itemprop="url">Microservcies [PART II]</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-04T20:57:28+08:00">
+                2018-02-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>-<a href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener">原文链接</a></p>
+<hr>
+<h2 id="Characteristics-of-a-Microservice-architecture"><a href="#Characteristics-of-a-Microservice-architecture" class="headerlink" title="Characteristics of a Microservice architecture"></a>Characteristics of a Microservice architecture</h2><ul>
+<li>We cannot say there is a formal definition of the microservices architectural style, but we can attempt to describe what we see as common characteristics for architectures that fit the label. As with any definition that outlines common characteristics. not all microservice architectures hava all the characteristics, but we do expect that most microservice architectures exhibit exhibit most characteristics. While we authors have been active members of this rather loose community, our intention is to attempt a descriptin of what we see in our work and in similar efforts by teams we know. In particular we are no laying down some definition to conform to.</li>
+</ul>
+<h3 id="Componentizaton-via-services"><a href="#Componentizaton-via-services" class="headerlink" title="Componentizaton via services"></a>Componentizaton via services</h3><ul>
+<li><p>For as long as we’ve been involved in the software indeustry, there’s been a desire to build system by plugging together components, much in the way we see things are made in the physical world. During the last couple of decades we’ve seen considerable progress with large compendiums of of common libraries that are part of most language platforms.</p>
+</li>
+<li><p>When talking about components we run into the difficult definition of what makes a components. Our definition is that a components is a unit of software that is independently replaceable and upgradeable.</p>
+</li>
+<li><p>Microservice architectures will use libraries, but their primary way of componentizing their own software is by breaking down into services. We define libraries as components that are linked into a program and called using in-memory functin calls, while services are out-of-process components who communicate with a mechanism such as a web service request, or remote procedure call.(This is a different concept to that of a service object in many OO programs[3])</p>
+</li>
+<li><p>One main reason for using services as components(rather than libraries)is that services are independently deployable. If you have an application that consists of a multiple libraries in a single process, a change to any single component results in having to redeploy the entire application.But if that application is decomposed into multiple services, you can expect many single service changes to only require that servcie to be redeployed. That’s not an absolute, some changes will change service interfaces resulting in some coordination, but the aim of a good microservice architecture is to minimize these through cohesive servcie boundaries and evolution mechanisms in the service contracts.</p>
+</li>
+<li><p>Another consequence of using services as compnents is a more explicit component interface.Most languages do not have a good mechanism for defining an explicit Published Interface. Often it’s only documentation and discipline that prevents clients breaking a component’s encapsulation, leading to overly-tight coupling between components. Services make it easier to avoid this by using explicit remote call mechanisms.</p>
+</li>
+<li><p>Using services like this does have downsides.Remote calls are more expensive than in-process calls,and thus remote APIs need to be coarser-grained.which is often more awkward to use.If you need to change the allocation of responsibilities between components,such movements of behavior are harder to do when you’re crossing process boundaries.</p>
+</li>
+<li><p>At a first approximation,we can observe that services map to runtime processes,but that is only a first approximation.A service may consist of multiple processes that will always be developed and deployed together,such as an application process and a database that’s only used by that servcie.</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+    <div>
+      
+    </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Microservice/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -349,15 +491,13 @@
         
           
             <ul>
-<li>学习一下微服务, 想看原文的可以点击下面的链接<br><a href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener">原文链接</a></li>
+<li>学习一下微服务, 想看原文的可以点击下面的链接 <a href="https://martinfowler.com/articles/microservices.html" target="_blank" rel="noopener">原文链接</a></li>
 </ul>
 <h1 id="A-definition-of-this-new-architectural"><a href="#A-definition-of-this-new-architectural" class="headerlink" title="A definition of this new architectural"></a>A definition of this new architectural</h1><ul>
 <li><p>The term “Microservice Architecture” has sprung up over the last few years to describe a particular way of designing software applications as suites of independently deployable services. While there is no precise definition of this architectural style, there are certain common characteristics around organization around business capabillity, automated deployment, intelligence in the endpoints, and decentralized control of languages and data</p>
 </li>
 <li><p>“Microservices” - yet anothher new term on the crowded streets of software architecture. Although our natural inclination is to pass such things by with a contemptuous glance, this bit of terminology describes a style of software systems that we are finding more and more appealing. We’ve seen many projects use this style in the last few years,and results so far have been positive, so much so that for many of our colleagues this is becoming the default style for building enterprise applications, Sadly, however, there’s not much information that outlines what the Microservice stytle is and hwo to do it.</p>
 </li>
-</ul>
-<ul>
 <li><p>In short, the miroservice arcitectural style [1] is an approach to developing a single applicaton as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API, These services are built aroud business capabillities and independently deployable by fully automated deployment machinery.There is a bare minimum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.</p>
 </li>
 <li><p>To start explaining the microservice style it’s useful to compare it to the monolithic style: a monolithic application built as a single unit, Enterprise Applications are often built in three main parts: a client-side user interface(consisting of HTML pages and javascript running in a browser on the user’s machine) a database(consisting of many tables inserted into a common, and usually relational, database management system), and a server-side application. The server-side application will handle HTTP requests, execute domin logic, retrieve and update data from the database, and select and populate HTML views to be sent to the browser. This server-side application is a monolith - a single logical executable[2]. Any changes to the system involve building and deploying a new version of the server-side application.</p>
@@ -368,7 +508,7 @@
 </li>
 <li><p>These frustrations have led to the microservice architectual style: building applications as suites of services. As well as the fact services are independently deployable and scalable, each service also provides a firm module boundary, each allowing for different services to be written in different programming languages. They can also be managed by different teams.</p>
 </li>
-<li><p>We do not claim that the micro service style is novel or innovative, its roots go back at least to  the design principles of Unix. But we do think that not enoughh people consider a microservcie architecture and that many software developments would be better off if they used it.</p>
+<li><p>We do not claim that the micro service style is novel or innovative, its roots go back at least to the design principles of Unix. But we do think that not enoughh people consider a microservcie architecture and that many software developments would be better off if they used it.</p>
 </li>
 </ul>
 
@@ -588,7 +728,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
