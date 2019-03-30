@@ -5,9 +5,9 @@
   <subtitle>记录一下自己学习过程的点点滴滴</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://www.hpfish.cn/"/>
   <updated>2019-03-30T15:06:20.360Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://www.hpfish.cn/</id>
   
   <author>
     <name>hpfish</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test_my_site</title>
-    <link href="http://yoursite.com/2019/03/30/test-my-site/"/>
-    <id>http://yoursite.com/2019/03/30/test-my-site/</id>
+    <link href="http://www.hpfish.cn/2019/03/30/test-my-site/"/>
+    <id>http://www.hpfish.cn/2019/03/30/test-my-site/</id>
     <published>2019-03-30T15:06:20.000Z</published>
     <updated>2019-03-30T15:06:20.360Z</updated>
     
@@ -32,8 +32,8 @@
   
   <entry>
     <title>Microservcies [PART II]</title>
-    <link href="http://yoursite.com/2018/02/04/Microservice-II/"/>
-    <id>http://yoursite.com/2018/02/04/Microservice-II/</id>
+    <link href="http://www.hpfish.cn/2018/02/04/Microservice-II/"/>
+    <id>http://www.hpfish.cn/2018/02/04/Microservice-II/</id>
     <published>2018-02-04T12:57:28.852Z</published>
     <updated>2018-02-04T13:49:12.622Z</updated>
     
@@ -55,8 +55,8 @@
   
   <entry>
     <title>Microservcies [PART I]</title>
-    <link href="http://yoursite.com/2018/02/02/Microservice/"/>
-    <id>http://yoursite.com/2018/02/02/Microservice/</id>
+    <link href="http://www.hpfish.cn/2018/02/02/Microservice/"/>
+    <id>http://www.hpfish.cn/2018/02/02/Microservice/</id>
     <published>2018-02-01T16:26:53.456Z</published>
     <updated>2018-02-04T13:51:08.216Z</updated>
     
