@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.hpfish.cn/"/>
-  <updated>2019-03-30T15:06:20.360Z</updated>
+  <updated>2019-03-30T17:38:00.481Z</updated>
   <id>http://www.hpfish.cn/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.hpfish.cn/2019/03/31/Hello-World/"/>
+    <id>http://www.hpfish.cn/2019/03/31/Hello-World/</id>
+    <published>2019-03-30T17:38:00.000Z</published>
+    <updated>2019-03-30T17:38:00.481Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>test_my_site</title>
