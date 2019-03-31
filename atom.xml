@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.hpfish.cn/"/>
-  <updated>2019-03-30T18:05:17.886Z</updated>
+  <updated>2019-03-31T02:08:25.568Z</updated>
   <id>http://www.hpfish.cn/</id>
   
   <author>
@@ -21,12 +21,14 @@
     <link href="http://www.hpfish.cn/2019/03/31/HelloWorld/"/>
     <id>http://www.hpfish.cn/2019/03/31/HelloWorld/</id>
     <published>2019-03-30T18:05:17.000Z</published>
-    <updated>2019-03-30T18:05:17.886Z</updated>
+    <updated>2019-03-31T02:08:25.568Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="Test" scheme="http://www.hpfish.cn/tags/Test/"/>
     
   </entry>
   
